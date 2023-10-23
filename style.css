@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 2;
+}
+header .headerleft h1 {
+  font-size: 30px;
+  color: white;
+}
+header .headerleft h1:hover {
+  color: rgb(187, 79, 36);
+}
+header .headerright ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-weight: 600;
+}
+header .headerright li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+header .headerright li a:hover {
+  color: rgb(187, 79, 36);
+  background-color: white;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.enjoy {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./hero_2.jpg.webp);
+  background-position: center;
+  background-size: cover;
+}
+.enjoy .sectiontext {
+  width: 60%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.enjoy .sectiontext h1 {
+  font-size: 75px;
+  color: white;
+}
+.enjoy .sectiontext button {
+  width: 170px;
+  height: 60px;
+  border: white solid 1px;
+  font-size: 18px;
+  color: white;
+  background: transparent;
+  margin-top: 50px;
+}
+
+.therestaurant {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  padding: 30px;
+}
+.therestaurant img {
+  width: 540px;
+  height: 340px;
+}
+
+.therestauranttext h1 {
+  font-size: 40px;
+}
+.therestauranttext p {
+  font-size: 20px;
+  color: cadetblue;
+}
+.therestauranttext img {
+  height: 70px;
+  width: 80px;
+}
+
+.section3 {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.section3 .section3text {
+  width: 100%;
+  padding: 40px;
+}
+.section3 .section3text h1 {
+  padding-left: 200px;
+  font-size: 50px;
+  text-align: center;
+  position: relative;
+}
+.section3 .section3text h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10%;
+  height: 2px;
+  background: rgb(187, 79, 36);
+}
+.section3 .section3text p {
+  color: rgb(168, 164, 164);
+  text-align: center;
+}
+
+.imgs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
+.imgs img {
+  width: 350px;
+  height: 540px;
+}
+
+.specilmenu {
+  width: 100%;
+  padding-top: 10%;
+}
+.specilmenu .specialhtext {
+  width: 100%;
+  text-align: center;
+}
+.specilmenu .specialhtext h1 {
+  position: relative;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.specilmenu .specialhtext h1::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  background-color: rgb(187, 79, 36);
+  left: 45%;
+}
+
+.specialimgs {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 30px;
+  gap: 30px;
+}
+.specialimgs .specialimg {
+  position: relative;
+  overflow: hidden;
+}
+.specialimgs .specialimg img {
+  width: 467px;
+  height: 727px;
+}
+.specialimgs .specialimg:hover img {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+.specialimgs .specialimg .imgtext {
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.specialimgs .specialimg .imgtext h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+.specialimgs .specialimg .imgtext p {
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.ourmenu {
+  width: 100%;
+}
+.ourmenu .ourtext {
+  width: 100%;
+  padding: 40px 20px;
+}
+.ourmenu .ourtext h1 {
+  position: relative;
+  text-align: center;
+  font-size: 39px;
+}
+.ourmenu .ourtext h1::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(187, 79, 36);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 5%;
+  height: 3px;
+}
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.cards .context {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3%;
+  justify-content: center;
+}
+.cards .context h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.cards .context p {
+  color: gray;
+}
+.cards .context h1 {
+  color: rgb(187, 79, 36);
+  font-size: 40px;
+  font-weight: 100;
+}
+.cards img {
+  width: 400px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testimonial {
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+}
+.testimonial h1 {
+  position: relative;
+  font-size: 50px;
+}
+.testimonial h1::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  background-color: rgb(187, 79, 36);
+  left: 45%;
+}
+
+.mellisa {
+  width: 100%;
+}
+.mellisa .mellisatext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 40px;
+}
+.mellisa .mellisatext p {
+  width: 50%;
+}
+.mellisa .mcontent {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.mellisa .mcontent img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 120px;
+  padding: 50px 50px;
+}
+.blog .blogcard .blogimg {
+  width: 100%;
+}
+.blog .blogcard .blogimg img {
+  width: 500px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog .blogcard .blogtext h1 {
+  color: rgb(187, 79, 36);
+}
+.blog .blogcard .blogtext h4 {
+  color: gray;
+  opacity: 0.8;
+}
+.blog .blogcard .blogtext p {
+  width: 400px;
+}
+.blog .blogcard .blogtext button {
+  background-color: rgb(187, 79, 36);
+  color: white;
+  opacity: 0.9;
+  padding: 12px 10px;
+  width: 200px;
+  border: none;
+}
+
+.footer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .footertext {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .footertext p {
+  width: 300px;
+}
+.footer .footertext h1,
+.footer .footertext h4 {
+  color: rgb(187, 79, 36);
+}
+.footer .footertext h2 {
+  width: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  header .headerright {
+    opacity: 0;
+  }
+  .enjoy .sectiontext {
+    transform: scale(0.8);
+  }
+  .therestaurant {
+    grid-template-columns: auto;
+  }
+  .section3 .imgs {
+    grid-template-columns: auto;
+  }
+  .specialimgs {
+    grid-template-columns: auto;
+  }
+  .ourmenu .cards {
+    grid-template-columns: auto;
+  }
+  .blog {
+    grid-template-columns: auto;
+  }
+  .footer {
+    display: flex;
+    gap: 29px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
