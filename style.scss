@@ -51,7 +51,7 @@ header {
 
 .enjoy {
   width: 100%;
-  height: 500px;
+  height: 100vh;
   position: relative;
   z-index: 1;
   display: flex;
@@ -60,9 +60,10 @@ header {
   background-image: url(./hero_2.jpg.webp);
   background-position: center;
   background-size: cover;
+  clip-path: polygon(0 0, 100% 1%, 100% 75%, 0 100%);
 
   .sectiontext {
-    width: 60%;
+    width: 60%; 
     z-index: 2;
     display: flex;
     align-items: center;
@@ -91,7 +92,14 @@ header {
   display: grid;
   grid-template-columns: auto auto;
   gap: 30px;
-  padding: 30px;
+  // padding: 30px;
+  clip-path: polygon(0 0, 100% 1%, 100% 75%, 0 100%);
+  background-color: #f8f9fa;
+  margin-top: -230px;
+  padding-top: 300px;
+  padding-bottom: 60px;
+  padding-right: 40px;
+  padding-left: 50px;
 
   img {
     width: 540px;
